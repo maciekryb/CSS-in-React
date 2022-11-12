@@ -3,11 +3,14 @@ import './Text.css';
 
 const Text = () => {
   return (
-    <p className='red'>
-      Lorem ipsum Lorem ipsu ipsum Lorem ipsipsum Lorem ipsipsum Lorem ipsipsum Lorem
-      ipsipsum Lorem ipsipsum Lorem ipsipsum Lorem ipsipsum Lorem ipsipsum Lorem ipsipsum
-      Lorem ipsipsum Lorem ipsipsum Lorem ips
-    </p>
+    <div>
+      <button className='btn btn-dark'>Przycisk</button>
+      <p className='red'>
+        Lorem ipsum Lorem ipsu ipsum Lorem ipsipsum Lorem ipsipsum Lorem ipsipsum Lorem
+        ipsipsum Lorem ipsipsum Lorem ipsipsum Lorem ipsipsum Lorem ipsipsum Lorem
+        ipsipsum Lorem ipsipsum Lorem ipsipsum Lorem ips
+      </p>
+    </div>
   );
 };
 
