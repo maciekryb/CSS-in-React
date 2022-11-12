@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Text from './Text';
+import Footer from './Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
         onClick={() => this.setState({ underline: !this.state.underline })}>
         <h1 className={classes.join(' ')}>{text}</h1>
         <Text />
+        <Footer />
       </div>
     );
   }
