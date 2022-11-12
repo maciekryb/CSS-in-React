@@ -9,15 +9,19 @@ class App extends Component {
 
   render() {
     const text = 'Witaj na stronie';
-    let classes = '';
-    if (this.state.underline) classes += ' line';
-    if (text.length > 10) classes += ' big';
+    // let classes = '';
+    // if (this.state.underline) classes += ' line';
+    // if (text.length > 10) classes += ' big';
+
+    const classes = ['one'];
+    if (this.state.underline) classes.push('line');
+    if (text.length > 20) classes.push('big');
 
     return (
       <div
         className='app'
         onClick={() => this.setState({ underline: !this.state.underline })}>
-        <h1 className={classes}>{text}</h1>
+        <h1 className={classes.join(' ')}>{text}</h1>
         <Text />
       </div>
     );
